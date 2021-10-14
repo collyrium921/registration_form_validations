@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: gray;">
+    <script src="index.js"></script>
+    <div class="registration form">
+        <form>
+            <label for="name:"><b>Name <span>*</span>:</b></label>
+            <input type="text" id="name" placeholder="Enter Full Name" required><br>
+
+            <label for="username:"><b>User Name <span>*</span>:</b></label>
+            <input type="text" id="username" placeholder="Enter username" required>
+
+            <label for="DOB:"><b>Date Of Birth <span>*</span>:</b></label>
+            <input type="date" placeholder="Enter DOB" id="dob" required>
+
+            <label for="number:"><b>Mobile No. <span>*</span>:</b></label>
+            <input type="number range(10)" id="number" placeholder="maximum 10 digits" required>
+
+            <label for="email:"><b>Email <span>*</span>:</b></label>
+            <input type="email" id="email" placeholder="username@domain" required>
+
+            <label for="alternate email"><b>Alternate Email:</b></label>
+            <input type="email" id="alt_email" placeholder="username@domain">
+
+            <label for="password:"><b>Password <span>*</span>:</b></label>
+            <input type="password" placeholder="Enter Password" id="password" required>
+
+            <label for="confirm password:"><b>Confirm Password <span>*</span>:</b></label>
+            <input type="password" placeholder="Re-type Password" id="c_password" required>
+
+            <button type="submit" onclick="validation()">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
